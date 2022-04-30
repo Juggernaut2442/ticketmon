@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ticketmon</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGN-UP</string>
+    <string name="forgot_password">Forgot Password</string>
 </resources>

@@ -87,7 +87,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/btnSignup"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="178dp"
         android:layout_height="54dp"
@@ -95,6 +95,7 @@
         android:backgroundTint="#BC1C1C"
         android:backgroundTintMode="add"
         android:text="@string/signup"
+        android:onClick="gotoRegister"
         android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

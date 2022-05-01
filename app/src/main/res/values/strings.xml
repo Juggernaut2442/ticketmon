@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">Ticketmon</string>
-    <string name="username_hint">Username</string>
-    <string name="password_hint">Password</string>
+
     <string name="login">LOGIN</string>
     <string name="signup">SIGN-UP</string>
     <string name="forgot_password">Forgot Password</string>
-    <string name="sign_up">SIGN-UP</string>
+
+    <!--Put hints under here.-->
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="real_name_hint">Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="email_hint">E-Mail</string>
+    <string name="passwordconf_hint">Password Confirmation</string>
+
 </resources>

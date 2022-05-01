@@ -18,14 +18,10 @@ public class LoginActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
-
-
-
     }
 
     public void gotoRegister(View view) {
-        Intent intent = new Intent(getApplicationContext(),RegisterActivity.class);
-        startActivity(intent);
-
+        Intent registerIntent = new Intent(getApplicationContext(),RegisterActivity.class);
+        startActivity(registerIntent);
     }
 }

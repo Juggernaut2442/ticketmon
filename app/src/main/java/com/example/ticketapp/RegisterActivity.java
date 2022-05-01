@@ -17,11 +17,13 @@ public class RegisterActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_register);
-
     }
 
     public void gotoLogin(View view) {
-        Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
-        startActivity(intent);
+//        Intent loginIntent = new Intent(getApplicationContext(),LoginActivity.class);
+//        startActivity(loginIntent);
+        //Yukarıdakini kullanınca sürekli yeni activity açılıyor.
+
+        finish();
     }
 }

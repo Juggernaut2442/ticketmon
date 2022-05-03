@@ -118,6 +118,7 @@
         android:textColor="@color/white"
         android:textSize="12sp"
         android:textStyle="bold"
+        android:onClick="gotoResetPW"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

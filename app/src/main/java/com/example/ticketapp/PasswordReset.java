@@ -2,14 +2,12 @@ package com.example.ticketapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 
-public class LoginActivity extends AppCompatActivity {
+public class PasswordReset extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,16 +15,10 @@ public class LoginActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_password_reset);
     }
 
-    public void gotoRegister(View view) {
-        Intent registerIntent = new Intent(getApplicationContext(),RegisterActivity.class);
-        startActivity(registerIntent);
-    }
-
-    public void gotoResetPW(View view) {
-        Intent pwResetIntent = new Intent(getApplicationContext(),PasswordReset.class);
-        startActivity(pwResetIntent);
+    public void gotoLogin(View view) {
+        finish();
     }
 }

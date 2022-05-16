@@ -16,7 +16,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
     }
 
@@ -28,5 +27,11 @@ public class LoginActivity extends AppCompatActivity {
     public void gotoResetPW(View view) {
         Intent pwResetIntent = new Intent(getApplicationContext(),PasswordReset.class);
         startActivity(pwResetIntent);
+    }
+
+    public void gotoDrawer(View view) {
+        Intent drawerIntent = new Intent(getApplicationContext(), DrawerActivity.class);
+        startActivity(drawerIntent);
+        finish();
     }
 }

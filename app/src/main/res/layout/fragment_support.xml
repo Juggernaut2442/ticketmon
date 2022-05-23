@@ -62,5 +62,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <ListView
+        android:id="@+id/listbuttons"
+        android:layout_width="411dp"
+        android:layout_height="479dp"
+        android:divider="@color/dark_blue"
+        android:dividerHeight="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

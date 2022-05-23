@@ -9,6 +9,11 @@
     <string name="placeholder">PLACEHOLDER</string>
     <string name="support">SUPPORT</string>
     <string name="profile">PROFILE</string>
+    <string name="openticket">Open a Ticket</string>
+    <string name="activetickets">Active Tickets</string>
+    <string name="livesupport">Live Support</string>
+    <string name="faq">F.A.Q.</string>
+    <string name="suggestions">Suggestions</string>
 
     <!--Put hints under here.-->
     <string name="username_hint">Username</string>

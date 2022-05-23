@@ -37,18 +37,19 @@
 
     <TextView
         android:id="@+id/textPlaceholderTitle"
-        android:layout_width="301dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="108dp"
-        android:text="@string/support"
+        android:layout_width="300dp"
+        android:layout_height="86dp"
+        android:text="@string/settings"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/med_blue"
-        android:textSize="60sp"
+        android:textSize="57sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <View
         android:id="@+id/border"
@@ -57,22 +58,10 @@
         android:background="@drawable/titleborder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="@+id/imageLogo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
-    <ListView
-        android:id="@+id/listbuttons"
-        android:layout_width="411dp"
-        android:layout_height="479dp"
-        android:layout_marginBottom="104dp"
-        android:divider="@color/dark_blue"
-        android:dividerHeight="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

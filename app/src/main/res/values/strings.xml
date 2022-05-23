@@ -9,11 +9,16 @@
     <string name="placeholder">PLACEHOLDER</string>
     <string name="support">SUPPORT</string>
     <string name="profile">PROFILE</string>
+    <string name="settings">SETTINGS</string>
+    <string name="opentickettitle">OPEN A TICKET</string>
+    <string name="activeticketstitle">ACTIVE TICKETS</string>
+
     <string name="openticket">Open a Ticket</string>
     <string name="activetickets">Active Tickets</string>
     <string name="livesupport">Live Support</string>
     <string name="faq">F.A.Q.</string>
     <string name="suggestions">Suggestions</string>
+
 
     <!--Put hints under here.-->
     <string name="username_hint">Username</string>
@@ -23,5 +28,7 @@
     <string name="phone_number_hint">Phone Number</string>
     <string name="email_hint">E-Mail</string>
     <string name="passwordconf_hint">Password Confirmation</string>
+    <string name="tickettitle_hint">Enter a title</string>
+    <string name="extrainfo_hint">Enter extra info</string>
 
 </resources>

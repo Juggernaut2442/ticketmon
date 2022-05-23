@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentActivity;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
@@ -12,6 +13,8 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -23,6 +26,8 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_drawer);
 
         drawer = findViewById(R.id.drawer_layout);
@@ -63,9 +68,16 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                         new SupportFragment()).commit();
                 break;
 
+            case R.id.nav_settings:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SettingsFragment()).commit();
+                break;
+
+
             case R.id.nav_logout:
                 Toast.makeText(this, "Logged out.", Toast.LENGTH_SHORT).show();
                 break;
+
         }
         drawer.closeDrawer(GravityCompat.START);
 

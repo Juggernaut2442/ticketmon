@@ -7,6 +7,8 @@
     <string name="password_reset">PASSWORD RESET</string>
     <string name="reset">RESET</string>
     <string name="placeholder">PLACEHOLDER</string>
+    <string name="support">SUPPORT</string>
+    <string name="profile">PROFILE</string>
 
     <!--Put hints under here.-->
     <string name="username_hint">Username</string>

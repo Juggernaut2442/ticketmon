@@ -1,4 +1,4 @@
-package com.example.ticketapp;
+package com.example.ticketapp.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.example.ticketapp.R;
 
 import java.util.ArrayList;
 

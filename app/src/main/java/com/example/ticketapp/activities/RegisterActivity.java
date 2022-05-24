@@ -1,4 +1,4 @@
-package com.example.ticketapp;
+package com.example.ticketapp.activities;
 
 import  androidx.appcompat.app.AppCompatActivity;
 
@@ -11,10 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.text.DateFormat;
+import com.example.ticketapp.db.Database;
+import com.example.ticketapp.db.Function;
+import com.example.ticketapp.R;
+import com.example.ticketapp.db.Users;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 public class RegisterActivity extends AppCompatActivity {
 

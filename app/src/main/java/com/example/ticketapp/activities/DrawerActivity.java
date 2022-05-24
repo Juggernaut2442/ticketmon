@@ -1,24 +1,24 @@
-package com.example.ticketapp;
+package com.example.ticketapp.activities;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.FragmentActivity;
 
-import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.ticketapp.fragments.MainFragment;
+import com.example.ticketapp.fragments.ProfileFragment;
+import com.example.ticketapp.R;
+import com.example.ticketapp.fragments.SettingsFragment;
+import com.example.ticketapp.fragments.SupportFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class DrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

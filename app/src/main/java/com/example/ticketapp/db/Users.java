@@ -1,4 +1,4 @@
-package com.example.ticketapp;
+package com.example.ticketapp.db;
 
 public class Users {
     private String name;

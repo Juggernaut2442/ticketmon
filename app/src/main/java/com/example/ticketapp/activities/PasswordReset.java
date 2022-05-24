@@ -1,4 +1,4 @@
-package com.example.ticketapp;
+package com.example.ticketapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.example.ticketapp.R;
 
 public class PasswordReset extends AppCompatActivity {
 

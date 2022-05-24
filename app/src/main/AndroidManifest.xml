@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TicketApp">
         <activity
-            android:name=".DrawerActivity"
+            android:name=".activities.DrawerActivity"
             android:exported="false" />
         <activity
-            android:name=".PasswordReset"
+            android:name=".activities.PasswordReset"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".activities.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

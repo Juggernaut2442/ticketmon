@@ -1,4 +1,4 @@
-package com.example.ticketapp;
+package com.example.ticketapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.ticketapp.db.Database;
+import com.example.ticketapp.db.Function;
+import com.example.ticketapp.R;
 
 public class LoginActivity extends AppCompatActivity {
 

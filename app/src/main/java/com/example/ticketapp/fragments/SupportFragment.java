@@ -1,4 +1,4 @@
-package com.example.ticketapp;
+package com.example.ticketapp.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,9 +11,9 @@ import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
-import java.sql.Array;
+import com.example.ticketapp.R;
+
 import java.util.ArrayList;
 
 public class SupportFragment extends Fragment {

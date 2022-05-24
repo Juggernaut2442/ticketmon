@@ -1,4 +1,4 @@
-package com.example.ticketapp;
+package com.example.ticketapp.db;
 
 import android.util.Log;
 

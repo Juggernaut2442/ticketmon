@@ -52,13 +52,18 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
+                if(!password.equals(passwordconf)){
+                    Toast.makeText(getApplicationContext(),"Lütfen parolanızı onaylayınız!",Toast.LENGTH_LONG).show();
+                    return;
+                }
+
                 Function fc = new Function();
                 password = fc.getMd5Hash(password);
 
 
                 Calendar c = Calendar.getInstance();
                 SimpleDateFormat format = new SimpleDateFormat("dd-MMM-yyyy");
-              String  dateText = format.format(c.getTime());
+                String  dateText = format.format(c.getTime());
                 Users users = new Users(name,lastname,email,password,1,1,dateText);
                 Database db = new Database(getApplicationContext());
 

@@ -8,6 +8,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentActivity;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -34,6 +35,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
         if (savedInstanceState == null) {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new MainFragment()).commit();
@@ -52,6 +54,8 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Intent intent = getIntent();
+        String email = intent.getStringExtra("email");
         switch (item.getItemId()) {
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -64,8 +68,13 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                 break;
 
             case R.id.nav_support:
+                SupportFragment spt = new SupportFragment();
+                Bundle args = new Bundle();
+                args.putString("email",email);
+                spt.setArguments(args);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new SupportFragment()).commit();
+
                 break;
 
             case R.id.nav_settings:
@@ -79,6 +88,8 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                 break;
 
         }
+
+
         drawer.closeDrawer(GravityCompat.START);
 
         return true;

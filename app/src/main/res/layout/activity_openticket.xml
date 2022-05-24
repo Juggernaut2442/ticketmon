@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activities.RegisterActivity">
 
-    <View
-        android:id="@+id/border"
-        android:layout_width="413dp"
-        android:layout_height="104dp"
-        android:background="@drawable/titleborder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageLogo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/textAppName"
         android:layout_width="99dp"
@@ -47,6 +35,18 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="0dp" />
 
+    <View
+        android:id="@+id/border"
+        android:layout_width="413dp"
+        android:layout_height="104dp"
+        android:background="@drawable/titleborder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/textPlaceholderTitle"
         android:layout_width="301dp"
@@ -62,36 +62,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/editTextTicketExInfo"
-        android:layout_width="318dp"
-        android:layout_height="167dp"
-        android:background="@drawable/border"
-        android:backgroundTint="@color/med_blue"
-        android:ems="10"
-        android:hint="@string/extrainfo_hint"
-        android:importantForAutofill="no"
-        android:inputType="textUri|textLongMessage|textMultiLine"
-        android:textColorHint="@color/hint_blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808" />
-
     <TextView
-        android:id="@+id/textTitle"
+        android:id="@+id/textReason"
         android:layout_width="106dp"
         android:layout_height="36dp"
-        android:layout_marginTop="80dp"
-        android:text="Title:"
+        android:layout_marginTop="128dp"
+        android:text="Reason:"
         android:textColor="@color/med_blue"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textReason" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/reason_spinner"
@@ -106,19 +88,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textExtraInfo"
-        android:layout_width="171dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="45dp"
-        android:text="Extra Info:"
+        android:id="@+id/textTitle"
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="80dp"
+        android:text="Title:"
         android:textColor="@color/med_blue"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
+        app:layout_constraintTop_toBottomOf="@+id/textReason" />
 
     <EditText
         android:id="@+id/editTextTicketTitle"
@@ -138,17 +118,37 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textReason"
-        android:layout_width="106dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="128dp"
-        android:text="Reason:"
+        android:id="@+id/textExtraInfo"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="45dp"
+        android:text="Extra Info:"
         android:textColor="@color/med_blue"
         android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <EditText
+        android:id="@+id/editTextTicketExInfo"
+        android:layout_width="318dp"
+        android:layout_height="167dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/med_blue"
+        android:ems="10"
+        android:hint="@string/extrainfo_hint"
+        android:importantForAutofill="no"
+        android:inputType="textUri|textLongMessage|textMultiLine"
+        android:textColorHint="@color/hint_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
 
     <Button
         android:id="@+id/button"

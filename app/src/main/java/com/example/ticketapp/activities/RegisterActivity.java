@@ -29,7 +29,6 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
 
-        final EditText txtUsername = (EditText)findViewById(R.id.editTextUsername);
         final  EditText txtName = (EditText)findViewById(R.id.editTextName);
         final EditText txtLastname = (EditText)findViewById(R.id.editTextLastName);
         final  EditText txtPhonenumber = (EditText)findViewById(R.id.editTextPhone);
@@ -42,7 +41,6 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegisterPost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = txtUsername.getText().toString();
                 String name = txtName.getText().toString();
                 String lastname = txtLastname.getText().toString();
                 String phonenumber = txtPhonenumber.getText().toString();
@@ -50,7 +48,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = txtPassword.getText().toString();
                 String passwordconf = txtPassconf.getText().toString();
 
-                if(username.isEmpty() || name.isEmpty()|| lastname.isEmpty()|| phonenumber.isEmpty()|| email.isEmpty()|| password.isEmpty()|| passwordconf.isEmpty()){
+                if(name.isEmpty()|| lastname.isEmpty()|| phonenumber.isEmpty()|| email.isEmpty()|| password.isEmpty()|| passwordconf.isEmpty()){
                     Toast.makeText(getApplicationContext(),"Lütfen boş yer bırakmayınız",Toast.LENGTH_LONG).show();
                     return;
                 }

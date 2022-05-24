@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TicketApp">
         <activity
+            android:name=".activities.OpenTicketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActiveTicketActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.DrawerActivity"
             android:exported="false" />
         <activity

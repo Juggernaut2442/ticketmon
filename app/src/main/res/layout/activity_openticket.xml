@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="413dp"
+        android:layout_height="104dp"
+        android:background="@drawable/titleborder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textAppName"
+        android:layout_width="99dp"
+        android:layout_height="24dp"
+        android:fontFamily="monospace"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/med_blue"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLogo"
+        app:layout_constraintEnd_toEndOf="@+id/imageLogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageLogo"
+        app:layout_constraintTop_toTopOf="@+id/imageLogo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="4dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textPlaceholderTitle"
+        android:layout_width="301dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="108dp"
+        android:text="@string/opentickettitle"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/med_blue"
+        android:textSize="43sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTicketExInfo"
+        android:layout_width="351dp"
+        android:layout_height="186dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/med_blue"
+        android:ems="10"
+        android:hint="@string/extrainfo_hint"
+        android:importantForAutofill="no"
+        android:inputType="textUri|textLongMessage|textMultiLine"
+        android:textColorHint="@color/hint_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="104dp"
+        android:text="Title:"
+        android:textColor="@color/med_blue"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReason" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/reason_spinner"
+        android:layout_width="356dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/border"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textExtraInfo"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
+        android:text="Extra Info:"
+        android:textColor="@color/med_blue"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <EditText
+        android:id="@+id/editTextTicketTitle"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/med_blue"
+        android:ems="10"
+        android:hint="@string/tickettitle_hint"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/hint_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textReason"
+        android:layout_width="106dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="128dp"
+        android:text="Reason:"
+        android:textColor="@color/med_blue"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

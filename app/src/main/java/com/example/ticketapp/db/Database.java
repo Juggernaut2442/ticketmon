@@ -71,7 +71,20 @@ public class Database extends SQLiteOpenHelper {
       long id =  db.insert("user",null,cv);
       return id;
     }
+    public  long openTicket(Tickets tickets){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
 
+        cv.put("ticketID",tickets.getTicketID());
+        cv.put("userID",tickets.getUserID());
+        cv.put("subject",tickets.getSubject());
+        cv.put("message",tickets.getMessage());
+        cv.put("status",tickets.getStatus());
+        cv.put("date",tickets.getDate());
+
+        long id = db.insert("tickets",null,cv);
+        return id;
+    }
     public Boolean checkUserID(String email) {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("SELECT * from user where mail =?",new String[]{email});
